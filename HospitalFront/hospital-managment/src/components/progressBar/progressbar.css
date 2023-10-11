@@ -1,0 +1,137 @@
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0;
+    min-height: 500px;
+    background: 'black';
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    top: 42%;
+    left: 0;
+   
+}
+
+.progressBarContainer{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.progressBarContainer .progressBarCard{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    z-index: 10;
+    margin: 20px 20px 60px;
+    transition: 0.5s;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.progressBarContainer .progressBarCard .progressBarBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.percent .number h2{
+    color: #ff0461;;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.percent .number h2 span{
+    font-size: 24px;
+}
+
+svg{
+    display: relative;
+    width: 150px;
+    height: 150px;
+    
+
+}
+
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(255, 255, 0, 1);
+    transform: translate(5px,5px);
+    stroke-dasharray: 440px;
+    stroke-dashoffset:calc(440px - (440px * 100) / 100);
+}
+
+.progressbarText{
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    transform: translateX(-50%);
+    padding: 30px 20px 10px;
+    /* background: #ff0461;  #2bd2ff #18d539 */
+    background: #ff0461;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: 1;
+    transition: bottom 0.5s, z-index 0s, transform 0.5s padding 0.5s;
+    transition-delay: 0.5s, 0.5s,0s, 0.5s;
+}
+
+.progressBarCard:hover .progressbarText{
+    bottom: -70px;
+    z-index: 11;
+    transform: translateX(-50%) translateY(-50px);
+    padding: 30px 20px 10px;
+    transition-delay: 0s, 0.5s, 0.5s,0s;
+}

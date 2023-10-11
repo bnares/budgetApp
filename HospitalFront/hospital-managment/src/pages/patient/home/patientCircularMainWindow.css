@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContentView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #9ad751,#2196f3);
+
+}
+
+.patientMenu{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.patientMenu .toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3em;
+    transition: 1.25s;
+    z-index: 1000;
+}
+
+.patientMenu.active .toggle{
+    transform: rotate(360deg);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15), 0 0 0 2px #333, 0 0 0 8px #fff;
+}
+
+.patientMenu .itemButtonPatientMenu{
+    position: absolute;
+    left: 123px;
+    top: -60px;
+    transition: 0.5s;
+    transform: rotate(calc(360deg/7 * var(--i)));
+    transform-origin: -130px;
+    scale: 0;
+    transition-delay: calc(0.2s*var(--i));
+}
+
+.patientMenu.active .itemButtonPatientMenu{
+    scale: 1;
+}
+
+.patientMenu .itemButtonPatientMenu .itemButtonIcon{
+    position: relative;
+    display: flex;
+    transform: rotate(calc(360deg/-7 * var(--i)));
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.75em;
+    color: var(--clr);
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+
+.patientMenu .itemButtonPatientMenu:hover .itemButtonIcon{
+    font-size: 2.5em;
+    box-shadow: 0 0 0 2px var(--clr), 0 0 0 6px #fff;
+}
+
+
+.pulsate {
+    
+    transition: 1.5s;
+    opacity: 0.5;
+    animation: pulsate 2s linear infinite;
+}
+@keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 770px){
+    .patientMenu .itemButtonPatientMenu{
+        position: absolute;
+        left: 70px;
+        top: -60px;
+        transition: 0.5s;
+        transform: rotate(calc(360deg/7 * var(--i)));
+        transform-origin: -70px;
+        scale: 0;
+        transition-delay: calc(0.2s*var(--i));
+    }
+    
+}

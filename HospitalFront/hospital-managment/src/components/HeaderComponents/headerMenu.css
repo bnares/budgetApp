@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+}
+.mainContainer{
+    background-color: white;
+    margin: 0 30%;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    height: 75px;
+    
+    
+}
+ul.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: "50vw";
+    padding-inline-start: 0;
+    
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+ul li{
+    padding: 1.5rem;
+    
+}
+
+ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0px;
+
+}
+
+.text{
+    display: none;
+}
+
+.mainContainer ul li a .icon{
+    transition: 0.8s;
+    z-index: 10;
+}
+
+.mainContainer ul li a .text{
+    transition: 0.5s;
+}
+
+.mainContainer ul li{
+    transition: 0.8s;
+    position: relative;
+}
+
+.mainContainer ul li:hover{
+    bottom: 20px;
+    width: 37px;
+    height: 37px;
+    background: #29fd53;
+    border-radius: 50%;
+    border: 6px solid black;
+    transition: 0.8s;
+}
+
+.mainContainer ul li:hover a .icon{
+    transform: translateY(-15px);
+}
+
+.mainContainer ul li:hover a .text{
+    display: inline;
+}
+

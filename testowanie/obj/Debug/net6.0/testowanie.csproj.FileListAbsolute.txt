@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\HospitalsManagment\testowanie\bin\Debug\net6.0\testowanie.exe
+C:\Users\User\source\repos\HospitalsManagment\testowanie\bin\Debug\net6.0\testowanie.deps.json
+C:\Users\User\source\repos\HospitalsManagment\testowanie\bin\Debug\net6.0\testowanie.runtimeconfig.json
+C:\Users\User\source\repos\HospitalsManagment\testowanie\bin\Debug\net6.0\testowanie.dll
+C:\Users\User\source\repos\HospitalsManagment\testowanie\bin\Debug\net6.0\testowanie.pdb
+C:\Users\User\source\repos\HospitalsManagment\testowanie\obj\Debug\net6.0\testowanie.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\HospitalsManagment\testowanie\obj\Debug\net6.0\testowanie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\HospitalsManagment\testowanie\obj\Debug\net6.0\testowanie.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\HospitalsManagment\testowanie\obj\Debug\net6.0\testowanie.AssemblyInfo.cs
+C:\Users\User\source\repos\HospitalsManagment\testowanie\obj\Debug\net6.0\testowanie.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\HospitalsManagment\testowanie\obj\Debug\net6.0\testowanie.dll
+C:\Users\User\source\repos\HospitalsManagment\testowanie\obj\Debug\net6.0\refint\testowanie.dll
+C:\Users\User\source\repos\HospitalsManagment\testowanie\obj\Debug\net6.0\testowanie.pdb
+C:\Users\User\source\repos\HospitalsManagment\testowanie\obj\Debug\net6.0\testowanie.genruntimeconfig.cache
+C:\Users\User\source\repos\HospitalsManagment\testowanie\obj\Debug\net6.0\ref\testowanie.dll
